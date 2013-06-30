@@ -1,4 +1,4 @@
-require "cli_timer/version"
+require_relative "cli_timer/version"
 
 module CliTimer
   # Your code goes here...
