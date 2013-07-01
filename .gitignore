@@ -2,3 +2,5 @@
 results.html
 pkg
 html
+coverage
+Gemfile.lock
