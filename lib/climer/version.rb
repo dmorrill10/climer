@@ -1,3 +1,3 @@
-module CliTimer
+module Climer
   VERSION = "0.0.1"
 end

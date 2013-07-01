@@ -2,7 +2,7 @@
 
 require 'optparse'
 require 'methadone'
-require_relative '../lib/cli_timer.rb'
+require_relative '../lib/climer.rb'
 
 class App
   include Methadone::Main
@@ -37,7 +37,7 @@ class App
 
   arg :time_until_notification, :many
 
-  version CliTimer::VERSION
+  version Climer::VERSION
 
   use_log_level_option
 

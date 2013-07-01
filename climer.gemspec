@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cli_timer/version'
+require 'climer/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "cli_timer"
-  spec.version       = CliTimer::VERSION
+  spec.name          = "climer"
+  spec.version       = Climer::VERSION
   spec.authors       = ["Dustin Morrill"]
   spec.email         = ["morrill@ualberta.ca"]
   spec.description   = %q{Simple CLI timer}
   spec.summary       = %q{Simple CLI timer}
-  spec.homepage      = "https://github.com/dmorrill10/cli_timer"
+  spec.homepage      = "https://github.com/dmorrill10/climer"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

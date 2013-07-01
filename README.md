@@ -1,4 +1,4 @@
-# CliTimer
+# Climer
 
 TODO: Write a gem description
 
@@ -6,7 +6,7 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'cli_timer'
+    gem 'climer'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install cli_timer
+    $ gem install climer
 
 ## Usage
 

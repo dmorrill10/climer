@@ -1,9 +1,9 @@
 require_relative 'support/spec_helper'
 
-require_relative '../lib/cli_timer/human_duration'
-using CliTimer::HumanDuration
+require_relative '../lib/climer/human_duration'
+using Climer::HumanDuration
 
-describe 'CliTimer::HumanDuration' do
+describe 'Climer::HumanDuration' do
   it '#+ given an English formatted time returns a time given an elapsed time' do
     (Time.new(0) + '2 hours').must_equal Time.new(0, 1, 1, 2)
   end

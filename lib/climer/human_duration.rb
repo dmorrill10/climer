@@ -1,6 +1,6 @@
 require 'chronic_duration'
 
-module CliTimer
+module Climer
 module HumanDuration
   refine Time do
     alias_method :old_plus, :+

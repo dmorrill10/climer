@@ -3,7 +3,7 @@ Feature: Help documentation
   I want to show useful help documentation.
 
   Scenario: App just runs and shows help
-    When I get help for "cli_timer"
+    When I get help for "climer"
     Then the exit status should be 0
     And the banner should be present
     And the banner should document that this app takes options
