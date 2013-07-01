@@ -27,7 +27,7 @@ class Timer
   CARRIAGE_RETURN = "\r"
   def initialize(duration)
     @alert_time = Time.now + duration
-    puts "Alert set to activate at #{@alert_time.asctime}"
+    puts "Alert set to activate at #{@alert_time.strftime('%l:%M %p on %B %e, %Y')}"
     print countdown_string
 
     countdown_update_interval = '1 second'
