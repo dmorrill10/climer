@@ -8,10 +8,11 @@ class App
   include Methadone::Main
   include Methadone::CLILogging
 
-  main do |time_until_notification|
-    # your program code here
-    # You can access CLI options via
-    # the options Hash
+  main do |*time_until_notification|
+    time_until_notification.each do |time|
+      t = Climer::Timer.alert_in(time)
+      sleep(t.time_remaining.total + 5)
+    end
   end
 
   # supplemental methods here

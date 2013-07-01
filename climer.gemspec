@@ -18,16 +18,18 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency('aruba')
-  spec.add_development_dependency 'rake', '~> 0.9.2'
-  spec.add_dependency('methadone', '~> 1.3.0')
-  spec.add_dependency 'chronic_duration', '~> 0.10'
+  spec.add_dependency 'methadone', '~> 1.3.0'
+  spec.add_dependency 'time_distribution'
+  spec.add_dependency 'rufus-scheduler'
 
+  spec.add_development_dependency "bundler", "~> 1.3"
+  spec.add_development_dependency 'aruba'
+  spec.add_development_dependency 'rake', '~> 0.9.2'
   spec.add_development_dependency 'turn', '~> 0.9'
   spec.add_development_dependency 'minitest', '~> 4.7'
   spec.add_development_dependency 'awesome_print', '~> 1.0'
   spec.add_development_dependency 'pry-rescue', '~> 1.0'
   spec.add_development_dependency 'simplecov', '~> 0.7'
+  spec.add_development_dependency 'timecop'
   # spec.add_development_dependency 'mocha', '~> 0.13'
 end
