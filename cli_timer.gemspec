@@ -22,6 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency('aruba')
   spec.add_development_dependency 'rake', '~> 0.9.2'
   spec.add_dependency('methadone', '~> 1.3.0')
+  spec.add_dependency 'chronic_duration', '~> 0.10'
 
   spec.add_development_dependency 'turn', '~> 0.9'
   spec.add_development_dependency 'minitest', '~> 4.7'
