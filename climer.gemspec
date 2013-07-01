@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'methadone', '~> 1.3.0'
   spec.add_dependency 'time_distribution'
   spec.add_dependency 'rufus-scheduler'
+  spec.add_dependency 'libnotify'
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency 'aruba'
@@ -31,5 +32,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry-rescue', '~> 1.0'
   spec.add_development_dependency 'simplecov', '~> 0.7'
   spec.add_development_dependency 'timecop'
-  # spec.add_development_dependency 'mocha', '~> 0.13'
 end

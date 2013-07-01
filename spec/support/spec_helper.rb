@@ -28,6 +28,5 @@ begin
   end
 
   require 'pry-rescue/minitest'
-  #require 'mocha/setup'
 rescue LoadError
 end

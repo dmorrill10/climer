@@ -8,9 +8,16 @@ class App
   include Methadone::Main
   include Methadone::CLILogging
 
+  URGENCY_OPTIONS = [:low, :normal, :critical]
+
   main do |*time_until_notification|
-    time_until_notification.each do |time|
-      t = Climer::Timer.alert_in(time)
+    time_until_notification.each_with_index do |time, i|
+      t = Climer::Timer.alert_in(
+        time,
+        'climer',
+        'Timer expired!',
+        URGENCY_OPTIONS[i] || URGENCY_OPTIONS.last
+      )
       sleep(t.time_remaining.total + 5)
     end
   end
